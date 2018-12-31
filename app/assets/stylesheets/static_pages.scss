@@ -10,8 +10,18 @@
 
 // Apps
 
+#apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card {
-    max-width: 20rem;
-    float: left;
-    margin: 5px;
+    min-width: 200px;
+    margin: 8px;
+    flex-basis: 30%;
+    .card-img-top {
+        height: auto;
+        width: 100%;
+    }
 }
