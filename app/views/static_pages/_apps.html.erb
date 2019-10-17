@@ -1,5 +1,23 @@
 <div id="apps" class="container">
     <div class="card">
+        <%= image_tag "app_images/game-shelf.png", :class => "card-img-top" %>
+        <div class="card-body">
+            <h5 class="card-title">Game Shelf</h5>
+            <p class="card-text">This app allows you to quickly add games to your virtual game shelf by pulling data from board game geek.</p>
+            <a href="http://game-shelf.nicholaskillin.com/" class="btn btn-primary" target="blank">Live Demo</a>
+            <%= link_to image_tag("github.png", size: "30x30"), "https://github.com/nicholaskillin/game-shelf", target: "_blank" %>
+        </div>
+    </div>
+    <div class="card">
+        <%= image_tag "app_images/pco-embed-checker.png", :class => "card-img-top" %>
+        <div class="card-body">
+            <h5 class="card-title">PCO Embed Checker</h5>
+            <p class="card-text">This app is for the staff at Planning Center. It allows them to quickly test components designed to be embedded in other websites.</p>
+            <a href="https://pco-embed-checker.herokuapp.com/" class="btn btn-primary" target="blank">Live Demo</a>
+            <%= link_to image_tag("github.png", size: "30x30"), "https://github.com/nicholaskillin/pco-embed-checker", target: "_blank" %>
+        </div>
+    </div>
+    <div class="card">
         <%= image_tag "app_images/sample-app.png", :class => "card-img-top" %>
         <div class="card-body">
             <h5 class="card-title">Rails Tutorial Sample App</h5>
@@ -24,24 +42,6 @@
             <p class="card-text">This is a pretty straight forward workout app. You can add workouts once you have signed in, add sets to those workouts and track how much weight you lifted on each machine and how many reps you did.</p>
             <a href="https://murmuring-harbor-78711.herokuapp.com/" class="btn btn-primary" target="blank">Live Demo</a>
             <%= link_to image_tag("github.png", size: "30x30"), "https://github.com/nicholaskillin/workout-app", target: "_blank" %>
-        </div>
-    </div>
-    <div class="card">
-        <%= image_tag "app_images/game-shelf.png", :class => "card-img-top" %>
-        <div class="card-body">
-            <h5 class="card-title">Game Shelf</h5>
-            <p class="card-text">This app allows you to quickly add games to your virtual game shelf by pulling data from board game geek.</p>
-            <a href="http://game-shelf.nicholaskillin.com/" class="btn btn-primary" target="blank">Live Demo</a>
-            <%= link_to image_tag("github.png", size: "30x30"), "https://github.com/nicholaskillin/game-shelf", target: "_blank" %>
-        </div>
-    </div>
-    <div class="card">
-        <%= image_tag "app_images/pco-embed-checker.png", :class => "card-img-top" %>
-        <div class="card-body">
-            <h5 class="card-title">PCO Embed Checker</h5>
-            <p class="card-text">This app is for the staff at Planning Center. It allows them to quickly test components designed to be embedded in other websites.</p>
-            <a href="https://pco-embed-checker.herokuapp.com/" class="btn btn-primary" target="blank">Live Demo</a>
-            <%= link_to image_tag("github.png", size: "30x30"), "https://github.com/nicholaskillin/pco-embed-checker", target: "_blank" %>
         </div>
     </div>
 </div>
