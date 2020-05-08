@@ -8,5 +8,5 @@
             <a class="btn btn-primary btn-lg" href="#apps" role="button">See my apps</a><br>
         </div>
     </div>
-   <%= render 'apps' %>
+    <%= react_component("App", {repos: @repos})%>
 </div>

@@ -5,23 +5,27 @@
 // About me
 
 .jumbotron {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 // Apps
 
 #apps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
-    min-width: 320px;
-    margin: 8px;
-    flex-basis: 30%;
-    .card-img-top {
-        height: auto;
-        width: 100%;
-    }
+  min-width: 320px;
+  margin: 8px;
+  flex-basis: 30%;
+  .card-img-top {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.github-image {
+  width: 30px;
 }

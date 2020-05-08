@@ -1,5 +1,29 @@
 {
   "name": "portfolio",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@babel/preset-react": "^7.9.4",
+    "@emotion/cache": "^10.0.29",
+    "@emotion/core": "^10.0.28",
+    "@planning-center/ui-kit": "^8.2.0",
+    "@rails/webpacker": "5.1.1",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "emotion-theming": "^10.0.27",
+    "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.21",
+    "react_ujs": "^2.6.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.3"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "scripts": {
+    "start": "bin/webpack-dev-server --inline --hot"
+  }
 }
