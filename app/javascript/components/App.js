@@ -2,6 +2,7 @@ import React from 'react'
 import { Text } from '@planning-center/ui-kit'
 import { hot } from 'react-hot-loader/root'
 import GithubLogo from 'images/github.png'
+import { func } from 'prop-types'
 
 function App({ repos }) {
   let portfolioRepos = []
@@ -21,7 +22,11 @@ function App({ repos }) {
     a.updated_at > b.updated_at ? -1 : 1
   )
 
-  console.log(portfolioRepos[0])
+  function localDateTime(date) {
+    let originalDate = new Date(date)
+    let readableDate = `${originalDate.toLocaleDateString()} ${originalDate.toLocaleTimeString()}`
+    return readableDate
+  }
 
   return (
     <>
@@ -38,9 +43,8 @@ function App({ repos }) {
               {repo.homepage && repo.name !== 'portfolio' && (
                 <a
                   href={repo.homepage}
-                  className="btn btn-primary"
+                  className="btn btn-primary live-button"
                   target="blank"
-                  style={{ marginRight: 4 + 'px' }}
                 >
                   Live Website
                 </a>
@@ -48,7 +52,9 @@ function App({ repos }) {
               <a href={repo.svn_url} target="blank">
                 <img src={GithubLogo} className="github-image" />{' '}
               </a>
-              <p id="last-updated">Last updated: {repo.updated_at}</p>
+              <p className="last-updated">
+                Last updated: {localDateTime(repo.updated_at)}
+              </p>
             </div>
           </div>
         ))}

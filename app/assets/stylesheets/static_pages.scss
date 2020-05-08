@@ -24,8 +24,13 @@
     height: auto;
     width: 100%;
   }
-}
-
-.github-image {
-  width: 30px;
+  .github-image {
+    width: 30px;
+  }
+  .last-updated {
+    padding-top: 4px;
+  }
+  .live-button {
+    margin-right: 7px;
+  }
 }
