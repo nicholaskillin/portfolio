@@ -1,8 +1,6 @@
-import React from 'react'
-import { Text } from '@planning-center/ui-kit'
-import { hot } from 'react-hot-loader/root'
 import GithubLogo from 'images/github.png'
-import { func } from 'prop-types'
+import React from 'react'
+import { hot } from 'react-hot-loader/root'
 
 function App({ repos }) {
   let portfolioRepos = []
@@ -14,6 +12,7 @@ function App({ repos }) {
       repo.name !== 'PCO-Reports' &&
       repo.name !== 'streamdeck_profiles'
     ) {
+      console.log(repo)
       portfolioRepos.push(repo)
     }
   })
@@ -35,7 +34,7 @@ function App({ repos }) {
           <div className="card" key={repo.id}>
             <img
               className="card-img-top"
-              src={`https://raw.githubusercontent.com/nicholaskillin/${repo.name}/master/${repo.name}.png`}
+              src={`https://raw.githubusercontent.com/nicholaskillin/${repo.name}/${repo.default_branch}/${repo.name}.png`}
             />
             <div className="card-body">
               <h5 className="card-title">{repo.name}</h5>
